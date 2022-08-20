@@ -1,0 +1,42 @@
+/** @format */
+html {
+  scroll-behavior: smooth;
+}
+
+.a11y {
+  position: absolute;
+  transform: translateY(-100%);
+}
+.a11y:focus {
+  background-color: #fca311;
+  position: fixed;
+  transform: translateY(100%);
+  border-radius: 5px;
+  transition: 1s;
+}
+
+
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+#intro img {
+  animation: opa 2s forwards;
+}
+
+@keyframes opa {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
